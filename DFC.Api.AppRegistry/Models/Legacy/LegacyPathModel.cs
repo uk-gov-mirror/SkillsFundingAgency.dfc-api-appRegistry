@@ -12,7 +12,7 @@ namespace DFC.Api.AppRegistry.Models.Legacy
 
         public string? TopNavigationText { get; set; }
 
-        public int TopNavigationOrder { get; set; }
+        public int? TopNavigationOrder { get; set; }
 
         public Layout Layout { get; set; }
 

@@ -44,7 +44,7 @@ namespace DFC.Api.AppRegistry.Models
 
         [Display(Description = "Number indicating the position in the top navigation bar.  This value will have to agreed with Product owners and Service designers before deployment. Its suggested that numbers are allocated in increments of 100 or so.")]
         [Example(Description = "200")]
-        public int TopNavigationOrder { get; set; }
+        public int? TopNavigationOrder { get; set; }
 
         [Display(Description = "Which page layout the application should us.")]
         [Example(Description = "FullWidth")]
@@ -86,6 +86,9 @@ namespace DFC.Api.AppRegistry.Models
 
         [Display(Description = "List of Regions registered to the application.")]
         public List<RegionModel>? Regions { get; set; }
+
+        [Display(Description = "Global and local banners specific to the App Registration")]
+        public List<BannerModel>? Banners { get; set; }
 
         [Display(Description = "List of page location supported by the application.")]
         public Dictionary<Guid, PageLocationModel>? PageLocations { get; set; }

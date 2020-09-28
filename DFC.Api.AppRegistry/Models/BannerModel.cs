@@ -1,17 +1,15 @@
-﻿using System;
+﻿using DFC.Api.AppRegistry.Enums;
 
 namespace DFC.Api.AppRegistry.Models
 {
     public class BannerModel
     {
-        public string? Heading { get; set; }
+        public string? Title { get; set; }
 
-        public string ShortDescription { get; set; }
+        public string? Content { get; set; }
 
-        public Uri URL { get; set; }
+        public string? Icon { get; set; }
 
-        public string LinkText { get; set; }
-
-        public bool GlobalBanner { get; set; }
+        public BannerPriority Priority { get; set; }
     }
 }
