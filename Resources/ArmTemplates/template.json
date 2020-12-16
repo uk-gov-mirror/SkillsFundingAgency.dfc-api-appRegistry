@@ -253,6 +253,10 @@
                 "value": "1"
               },
               {
+                "name": "WEBSITE_ADD_SITENAME_BINDINGS_IN_APPHOST_CONFIG",
+                "value": "1"
+              },
+              {
                 "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
                 "value": "[reference(variables('AppServiceAppInsightsName')).outputs.InstrumentationKey.value]"
               },
